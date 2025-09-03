@@ -35,8 +35,8 @@ const retryFetch = () => {
 const loadUsers = async () => {
   try {
     await usersStore.getUsers();
-  } catch (error) {
-    console.error('Failed to load users:', error);
+  } catch {
+    //
   }
 };
 

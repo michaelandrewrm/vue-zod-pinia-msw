@@ -20,7 +20,6 @@ export const useUsersStore = defineStore('users', () => {
       return usersList.value;
     } catch (err) {
       error.value = 'Failed to fetch users';
-      console.error('Error fetching users:', err);
       throw err;
     } finally {
       loading.value = false;
@@ -41,7 +40,6 @@ export const useUsersStore = defineStore('users', () => {
       return null;
     } catch (err) {
       error.value = 'Failed to fetch user details';
-      console.error('Error fetching user:', err);
       throw err;
     } finally {
       loading.value = false;

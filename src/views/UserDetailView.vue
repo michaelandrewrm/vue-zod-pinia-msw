@@ -43,8 +43,8 @@ const goBack = () => {
 const loadUser = async () => {
   try {
     user.value = await usersStore.getUserById(props.id);
-  } catch (err) {
-    console.error('Error loading user:', err);
+  } catch {
+    //
   }
 };
 
